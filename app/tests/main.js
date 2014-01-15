@@ -50,7 +50,8 @@ require([
   '../tests/setup',
   '../tests/spec/lib/channels/fx-desktop',
   '../tests/spec/lib/xss',
-  '../tests/spec/lib/url'
+  '../tests/spec/lib/url',
+  '../tests/spec/views/base'
 ],
 function (Mocha) {
   var runner = Mocha.run();
