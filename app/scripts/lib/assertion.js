@@ -37,7 +37,7 @@ function (P, jwcrypto, FxaClient) {
       // while certSign is going over the wire, we can also sign the
       // assertion here on the machine
       return P.all(
-        client.certificateSign(kp.publicKey, CERT_DURATION_S),
+        client.certificateSign(kp.publicKey.toSimpleObject(), CERT_DURATION_S),
         assertion(kp.secretKey, audience)
       );
     });
